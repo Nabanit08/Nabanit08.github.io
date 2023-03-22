@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+    <link rel="stylesheet" href="/Plan B/Homepage2.css">
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css">
+
+<!-- Doc Link -> https://docs.google.com/spreadsheets/d/1ZgwsUFEwUtAFImqEYE0YsuMOfWvg7cy50QScfB_Td0Q/edit#gid=1423442285 -->
+<!-- AOS plugin inside head-->
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar" id="nav-menu">
+        <!-- <img class="Logo" src="" alt="Logo image broken"> -->
+        <div class="nav_parent">
+            <ul>
+                <li class="nav-link home"><a href="#homepagescroll">Home</a></li>
+                <li class="nav-link about"><a href="#aboutpagescroll">About</a></li>
+                <li class="nav-link skills"><a href="#section3">Skills</a></li>
+                <li class="nav-link projects"><a href="#section4">Projects</a></li>
+                <li class="nav-link contact"><a href="#section6">Contacts</a></li>
+            </ul>
+        </div>
+
+        <button id="resume-button-1" class="nav-link resume button-34" role="button" onclick="redirect()"><a download="" href="#" id="resume-link-1" >Resume</a></button>
+        
+    </nav>
+    <!-- Navbar ends -->
+
+    <!-- Line colors code starts --> 
+
+
+-->
+<div id="customlines">
+    <div class="customchildline1"></div>
+    <div class="customchildline2"></div>
+    <div class="customchildline3"></div>
+</div>
+
+    <!-- Line colors code ends -->
+
+
+
+    <!-- Banner -->
+
+    <div class="banner" id="home">
+
+        <div class="bannerimgdiv">
+            <img class="banner_img" src="/Plan B/Bg_img.png" alt="">
+        </div>
+
+
+        <div class="mypicdiv" id="homepagescroll">
+            <img class="home-img" class="My_picture" src="/Plan B/IMG-20230322-WA0003-removebg-preview.png" alt="">
+        </div>
+
+        <div class="name_in_banner">
+
+            <h2 id="I_am_colors">I'm</h2>
+            <!-- <br> -->
+            <h1 id="user-detail-name">Nabanit</h1>
+            <h1 id="aboutpagescroll" >Mondal</h1>
+            <!-- <button id="resume-button-2"  role="button"><a  download="" href="" id="resume-link-2"  -->
+                <!-- class="downbtn">Download Resume</a></button> -->
+                <!-- class="nav-link resume button-1" -->
+        </div>
+        <div id="triangle_left"></div>
+    </div>
+
+    <!-- Section 2 starts-->
+    <div id="about" class="about section section2">
+        <!-- <div class="custom-shape-divider-top-1678815870">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+            </svg>
+        </div> -->
+    <!-- class="about section" -->
+   
+        <!-- <h2 id="section2">About Me</h2> -->
+        <button class="button-89" role="button"><h1>About Me</h1></button>
+
+        <!-- Line colors code starts -->
+
+        <!-- <div id="lines">
+            <div class="childline1"></div>
+            <div class="childline2"></div>
+            <div class="childline3"></div>
+        </div> -->
+
+        <!-- Line colors code ends -->
+
+        <p id="user-detail-intro">A motivated and enthusiastic full stack developer  with good frontend skills on HTML,CSS and JavaScript and backend skills< on JAVA and having a passion for learning. Seeking opportunities to grow and develop career in tech industry while contributing fresh ideas and a positive attitude.<br> Ready for new challenges and eager to learn new skills and committed towards success.</p>
+
+    </div>
+    <!-- Section 2 ends-->
+
+    <!-- Section 3 starts -->
+
+    
+
+    <div id="skills" class="section3">
+
+        <div id="triangle_left"></div>
+
+        <button class="button-89" role="button"><h1>Skills</h1></button>
+        <!-- Line colors code starts -->
+
+        <!-- <div id="lines">
+            <div class="childline1"></div>
+            <div class="childline2"></div>
+            <div class="childline3"></div>
+        </div> -->
+
+        <!-- Line colors code ends -->
+
+        <div class="skillsdiv">
+            <div class="skills-card" >
+                <img data-aos="zoom-in" data-aos-offset="200" class="skills-card-img" width="50%" height="50%" src="/Languages logos/html_logo-removebg-preview.png" alt="">
+                <h4 data-aos="zoom-in" data-aos-offset="200" class="skills-card-name">HTML</h4>
+            </div>
+            <!-- ------------------------------- -->
+            <div class="skills-card">
+                <img data-aos="zoom-in" data-aos-offset="200" class="skills-card-img" width="50%" height="50%" src="/Languages logos/CSS_logo-removebg-preview (1).png" alt="">
+                <h4 data-aos="zoom-in" data-aos-offset="200" class="skills-card-name">CSS</h4>
+            </div>
+            <!-- ------------------------------- -->
+            <div class="skills-card">
+                <img data-aos="zoom-in" data-aos-offset="200" class="skills-card-img" width="50%" height="50%" border-radius="5px" src="/Languages logos/JS logo.png" alt="">
+                <h4 data-aos="zoom-in" data-aos-offset="200" class="skills-card-name">JavaScript</h4>
+            </div>
+            <!-- ------------------------------- -->
+            <div class="skills-card">
+                <img data-aos="zoom-in" data-aos-offset="200" class="skills-card-img" id="bootstrap-logo" width="50%" height="50%" src="/Languages logos/bootstrap-logo-shadow.png" alt="">
+                <h4 data-aos="zoom-in" data-aos-offset="200" class="skills-card-name">Bootstrap</h4>
+            </div>
+            <!-- ------------------------------- -->
+            <div  class="skills-card">
+                <img data-aos="zoom-in" data-aos-offset="150" class="skills-card-img" width="50%" height="50%" src="/Languages logos/Java_logo-removebg-preview.png" alt="">
+                <h4 data-aos="zoom-in" data-aos-offset="150" class="skills-card-name">JAVA</h4>
+            </div>
+            <!-- ------------------------------- -->
+            <div class="skills-card">
+                <img data-aos="zoom-in" data-aos-offset="150" class="skills-card-img" width="50%" height="50%" src="/Languages logos/MySQL_logo-removebg-preview.png" alt="">
+                <h4 data-aos="zoom-in" data-aos-offset="150" class="skills-card-name">MySQL</h4>
+            </div>
+            <!----------------------------------->
+            <div  class="skills-card">
+                <img data-aos="zoom-in" data-aos-offset="150" class="skills-card-img" width="50%" height="50%" src="/Languages logos/Spring_boot_logo-removebg-preview.png" alt="">
+                <h4 data-aos="zoom-in" data-aos-offset="150" class="skills-card-name">Spring</h4>
+            </div>
+            <!-- ------------------------------- -->
+            <div  class="skills-card">
+                <img data-aos="zoom-in" data-aos-offset="150" class="skills-card-img" width="50%" height="50%" src="/Languages logos/hibernate-logo.png" alt="">
+                <h4 data-aos="zoom-in" data-aos-offset="150" class="skills-card-name">Hibernate</h4>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Section 3 ends -->
+
+    <!-- Section 4 starts -->
+
+    <div  id="projects" class="Section4">
+     <div id="triangle_left"></div>
+        <!-- <h2 id="section4">Projects</h2> -->
+
+        <button class="button-89" role="button"><h1>Skills</h1></button>
+
+        <!-- Line colors code starts -->
+
+        <!-- <div id="lines">
+            <div class="childline1"></div>
+            <div class="childline2"></div>
+            <div class="childline3"></div>
+        </div> -->
+
+        <!-- Line colors code ends -->
+
+        <div class="Projects_div">
+            <!-- ------------------------------- -->
+            <div class="project-card" data-aos="slide-right" data-aos-offset="200">
+                <div class="pro_img">
+                    <!-- <a class="project-deployed-link" href="https://peaceful-douhua-5883ad.netlify.app/"><img src="/My_Project_1_Photo2.png" alt=""></a>  -->
+                </div>
+                <div class="pro_details">
+
+                    <!-- <h4 class="project-title">Fashionized Website  <a  class="project-github-link" href="https://github.com/Soumit-Das/Fashionized_website"><i class="fab fa-github"></i></a></h4>
+                    <h5 class="project-description">A fashion based Ecommerce website</h5>
+                    <h4 id="techstack">Tech stacks</h4>
+                    <ul class="project-tech-stack">
+                        
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        
+                    </ul> -->
+            </div>
+
+            </div>
+            <div class="project-card" data-aos="slide-left" data-aos-offset="200">
+                <div class="pro_img">
+                    <!-- <a class="project-deployed-link" href="https://peaceful-douhua-5883ad.netlify.app/"><img src="/My_Project_1_Photo2.png" alt=""></a>  -->
+                </div>
+                <div class="pro_details">
+
+                    <!-- <h4 class="project-title">Fashionized Website  <a  class="project-github-link" href="https://github.com/Soumit-Das/Fashionized_website"><i class="fab fa-github"></i></a></h4>
+                    <h5 class="project-description">A fashion based Ecommerce website</h5>
+                    <h4 id="techstack">Tech stacks</h4>
+                    <ul class="project-tech-stack">
+                        
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        
+                    </ul> -->
+            </div>
+
+            </div>
+            <div class="project-card" data-aos="slide-right" data-aos-offset="200">
+                <div class="pro_img">
+                    <!-- <a class="project-deployed-link" href="https://peaceful-douhua-5883ad.netlify.app/"><img src="/My_Project_1_Photo2.png" alt=""></a>  -->
+                </div>
+                <div class="pro_details">
+
+                    <!-- <h4 class="project-title">Fashionized Website  <a  class="project-github-link" href="https://github.com/Soumit-Das/Fashionized_website"><i class="fab fa-github"></i></a></h4>
+                    <h5 class="project-description">A fashion based Ecommerce website</h5>
+                    <h4 id="techstack">Tech stacks</h4>
+                    <ul class="project-tech-stack">
+                        
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li> -->
+                        
+                    </ul>
+            </div>
+
+            </div>
+            <div class="project-card" data-aos="slide-left" data-aos-offset="200">
+                <div class="pro_img">
+                    <!-- <a class="project-deployed-link" href="https://peaceful-douhua-5883ad.netlify.app/"><img src="/My_Project_1_Photo2.png" alt=""></a>  -->
+                </div>
+                <div class="pro_details">
+
+                    <!-- <h4 class="project-title">Fashionized Website  <a  class="project-github-link" href="https://github.com/Soumit-Das/Fashionized_website"><i class="fab fa-github"></i></a></h4>
+                    <h5 class="project-description">A fashion based Ecommerce website</h5>
+                    <h4 id="techstack">Tech stacks</h4>
+                    <ul class="project-tech-stack">
+                        
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        
+                    </ul> -->
+            </div>
+
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 4 ends -->
+
+    
+    
+    <!-- Section 5 starts -->
+    <div id="triangle_left"></div>
+    <div class="section5">
+
+        <button class="button-89" role="button"><h1>Soft Skills</h1></button>
+        <!-- Line colors code starts -->
+<!-- 
+        <div id="lines">
+            <div class="childline1"></div>
+            <div class="childline2"></div>
+            <div class="childline3"></div>
+        </div> -->
+        
+        <!-- Line colors code ends -->
+        <div class="Soft_Skills">
+            
+            <!-- Block 1 -->
+            <h2>HTML</h2>
+            <div class="progressbar">
+                <div class="html"><span>86%</span></div>
+            </div>
+            <h2>CSS</h2>
+            <div class="progressbar">
+                <div class="css"><span>74%</span></div>
+            </div>
+            <h2>JavaScript</h2>
+            <div class="progressbar">
+                <div class="javascript"><span>65%</span></div>
+            </div>
+            <h2>Java</h2>
+            <div class="progressbar">
+                <div class="java"><span>54%</span></div>
+            </div>
+            
+
+        </div>
+    </div>
+
+
+    <!-- Section 5 ends -->
+
+    <!-- Section 5 (ii) starts -->
+
+<div class="section5ii">
+
+    <h2>Github</h2>
+    <!-- Line colors code starts -->
+
+    <div id="lines">
+        <div class="childline1"></div>
+        <div class="childline2"></div>
+        <div class="childline3"></div>
+    </div>
+    
+    <div class="githubcards">
+        
+        <img  id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=Nabanit08&theme=dark&hide_border=false&include_all_commits=true&count_private=true" alt="">
+        <img  id="github-top-langs" class="strk" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nabanit08&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="">
+        <img  id="github-streak-stats"  src="https://github-readme-streak-stats.herokuapp.com?user=Nabanit08&theme=dark&disable_animations=true" alt="">
+    </div>
+    <!-- <div id="calendar" class="react-activity-calendar"> -->
+        <div class="gitcalen">
+            <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+            <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+            <div class="calendar react-activity-calendar">
+            Loading the data just for you.
+            </div>
+            <script>
+            GitHubCalendar(".calendar", "Nabanit08");
+            // or enable responsive functionality
+            GitHubCalendar(".calendar", "Nabanit08", { responsive: true });
+            </script>
+        </div>
+        <!-- </div> -->
+        <!-- <img class="github_heatmap" class="react-activity-calendar" src="/Github heatmap.png" alt=""> -->
+        <!-- <img src="https://ghchart.rshah.org/Soumit-Das" alt="Soumit-Das's Github chart" /> -->
+    </div>
+    
+
+    <!-- Section 5 (ii) ends -->
+
+   
+    <!-- Section 6 starts -->
+    
+    <div id="contact">
+        <div id="triangle_left"></div>
+        <button class="button-89" role="button"><h1>Contact</h1></button>
+        <!-- Line colors code starts -->
+
+
+        <!-- Line colors code ends -->
+        <div class="container">
+            <div class="row">
+                <!-- <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p id="contact-email"><i class="fas fa-paper-plane"></i>soumitdas500@gmail.com</p>
+                    <p id="contact-phone"><i class="fas fa-phone-square-alt"></i>+91 7908597421</p>
+                    <div class="social-icons">
+                        <a id="contact-linkedin" href="https://www.linkedin.com/in/soumit-das-52620b242/" target="_blank"><i
+                                class="fab fa-linkedin" id="Linkedin-icon"></i></a>
+                        <a href="https://m.facebook.com/100022097675884/" target="_blank"><i class="fab fa-facebook"
+                                id="Facebook-icon"></i></a>
+                        <a href="https://instagram.com/_soumit_das?igshid=ZDdkNTZiNTM=" target="_blank"><i
+                                class="fab fa-instagram" id="insta-icon"></i></a>
+                        <a id="contact-github" href="https://github.com/Soumit-Das" target="_blank"><i
+                             class="fab fa-github"></i></a>
+                    </div>
+                    <-- HTML !-->
+                    <!-- <button  class="button-1" role="button"><a  download="" href="Soumit-Das-Resume (2).pdf">Download Resume</a></button> -->
+
+                </div> 
+                <div class="contact-right">
+                    <form method="post">
+                        <div class="upper_inputs">
+                            <input type="text" name="Name" id="name" placeholder="Your Name" required>
+                            <input type="email" name="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <textarea name="Message" rows="6" id="Text" placeholder="Your Message"></textarea>
+                        <br>
+                        <button class="button-1" id="btn">Submit</button>
+                    </form>
+                    <div class="email_phone_div">
+                        <div class="p_tag_div">
+                            <p id="contact-email"><i class="fas fa-paper-plane"></i>navy190899@gmail.com</p>
+                            <p id="contact-phone"><i class="fas fa-phone-square-alt"></i>+91 8777095939</p>
+                        </div>
+                        <div class="social-icons">
+                            <a id="contact-linkedin" href="#" target="_blank"><i
+                                    class="fab fa-linkedin" id="Linkedin-icon"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-facebook"
+                                    id="Facebook-icon"></i></a>
+                            <a href="#" target="_blank"><i
+                                    class="fab fa-instagram" id="insta-icon"></i></a>
+                            <a id="contact-github" href="#" target="_blank"><i
+                                 class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <!-- Section 6 ends -->
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <script>
+      
+
+       window.addEventListener("scroll",function(){
+        var header = document.getElementById("nav-menu");
+        header.classList.toggle("sticky",window.scrollY > 50)
+       })
+     
+
+        let number1 = document.getElementById("number1");
+        let number2 = document.getElementById("number2");
+        let number3 = document.getElementById("number3");
+
+        let counter1 = 0;
+        let counter2 = 0;
+        let counter3 = 0;
+
+        setInterval(() => {
+            if (counter1 == 85) {
+                clearInterval();
+            } else {
+                counter1 += 1;
+                number1.innerHTML = counter1 + "%";
+            }
+        }, 32)
+
+        setInterval(() => {
+            if (counter2 == 95) {
+                clearInterval();
+            } else {
+                counter2 += 1;
+                number2.innerHTML = counter2 + "%";
+            }
+        }, 28)
+
+        setInterval(() => {
+            if (counter3 == 75) {
+                clearInterval();
+            } else {
+                counter3 += 1;
+                number3.innerHTML = counter3 + "%";
+            }
+        }, 38)
+
+        let a = document.getElementById("I_am_colors");
+
+        let sky = a.innerText.charAt(0);
+        let blue = a.innerText.charAt(1);
+        let red = a.innerText.charAt(2);
+
+function redirect(){
+    window.open("https://drive.google.com/file/d/11t4pTsLtZHrjH5JSTorj5-hCbloXYj40/view?usp=share_link","_blank","noreferrer");
+}
+
+
+    </script>
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 300,
+        duration: 1000
+    });
+  </script>
+
+</body>
+
+</html>
