@@ -1,487 +1,448 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Portfolio | Murli Khaire</title>
+    <link rel="icon" href="img/logo1.png" type="image/icon type" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./nav.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
-    <link rel="stylesheet" href="Homepage2.css">
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css">
-
-<!-- Doc Link -> https://docs.google.com/spreadsheets/d/1ZgwsUFEwUtAFImqEYE0YsuMOfWvg7cy50QScfB_Td0Q/edit#gid=1423442285 -->
-<!-- AOS plugin inside head-->
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
-
-<body>
-
-    <!-- Navbar -->
-
-    <nav class="navbar" id="nav-menu">
-        <!-- <img class="Logo" src="" alt="Logo image broken"> -->
-        <div class="nav_parent">
-            <ul>
-                <li class="nav-link home"><a href="#homepagescroll">Home</a></li>
-                <li class="nav-link about"><a href="#aboutpagescroll">About</a></li>
-                <li class="nav-link skills"><a href="#section3">Skills</a></li>
-                <li class="nav-link projects"><a href="#section4">Projects</a></li>
-                <li class="nav-link contact"><a href="#section6">Contacts</a></li>
-            </ul>
+  <body>
+    <nav class="nav" id="nav-menu">
+      <div class="container">
+        <div class="logo">
+          <img src="img/logo1.png" onclick="homePage()" alt="" />
         </div>
-
-        <button id="resume-button-1" class="nav-link resume button-34" role="button" onclick="redirect()">
-        <a download="Nabanit-Mondal-Resume.pdf" href="Nabanit_Mondal Resume.pdf" id="resume-link-1" >Resume</a></button>
-        
+        <ul>
+          <li><a href="index.html" class="current nav-link home">Home</a></li>
+          <li>
+            <a class="link nav-link about" href="#about" data-scroll
+              >About Me</a
+            >
+          </li>
+          <li>
+            <a class="link nav-link skills" href="#skills" data-scroll
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a class="link nav-link projects" href="#projects" data-scroll
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a class="link nav-link contact" href="#contact" data-scroll
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="img/Murli_Khaire_Resume.pdf"
+              target="_blank"
+              download="Murli-Khaire-Resume"
+              onclick="window.open('https://drive.google.com/file/d/1E1Q4sLGpW4Qb-ZkE73UGDsjqUlrWKTGW/view?usp=sharing')"
+              id="resume-link-1"
+              class="link nav-link"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
-    <!-- Navbar ends -->
+    <div id="particles-js">
+      <div class="header" id="home">
+        <div class="header-flex">
+          <h1>
+            <div class="site-question">Hi, my name is</div>
+            <div id="user-detail-name" class="site-title">Murli Khaire</div>
+            <div id="user-detail-intro" class="site-description"><span class="typing"></span></div>
+          </h1>
+          <div class="header-icons">
+            <a
+              class="resumeClass nav-link resume"
+              id="resume-link-2"
+              href="img/Murli_Khaire_Resume.pdf"
+              target="_blank"
+              download="Murli-Khaire-Resume"
+              onclick="window.open('https://drive.google.com/file/d/1E1Q4sLGpW4Qb-ZkE73UGDsjqUlrWKTGW/view?usp=sharing')"
+              >Resume
+              <img src="img/pdf.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="programmer">
+          <img class="home-img" src="img/programmerCrop.png" alt="" />
+        </div>
+      </div>
+    </div>
 
-    <!-- Line colors code starts --> 
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <!-- User Introduction-->
+      <h1>About Me</h1>
+      <div class="user-details">
+        <picture>
+          <img
+            type="image/webp"
+            class="home-img"
+            srcset="./img/Murli-Image.jpg"
+            alt="Professional Me"
+          />
+        </picture>
+        <p id="user-detail-intro">
+          Innovative, result-driven Java Backend Developer with a good grasp of
+          Java, Spring boot, and Databases, and intuitive problem-solving
+          skills. Ability to translate business requirements into technical
+          solutions. looking forward to kick-starting his career within the IT
+          industry to fully utilize his skills and contribute to wonderful
+          projects.
+        </p>
+      </div>
+    </section>
 
-
--->
-<div id="customlines">
-    <div class="customchildline1"></div>
-    <div class="customchildline2"></div>
-    <div class="customchildline3"></div>
-</div>
-
-    <!-- Line colors code ends -->
-
-
-
-    <!-- Banner -->
-
-    <div class="banner" id="home">
-
-        <div class="bannerimgdiv">
-            <img class="banner_img" src="Bg_img.png" alt="">
+    <!-- Skills Section -->
+    <section id="skills">
+      <h1>Technical Skills</h1>
+      <div class="user-skills">
+        <div class="skills-card">
+          <img class="skills-card-img" src="img/html-5.png" alt="" />
+          <p class="skills-card-name">HTML</p>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="img/css-3.png" alt="" />
+          <p class="skills-card-name">CSS</p>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="img/js.png" alt="" />
+          <p class="skills-card-name">JavScript</p>
         </div>
 
-
-        <div class="mypicdiv" id="homepagescroll">
-            <img class="home-img" class="My_picture" src="IMG-20230322-WA0003-removebg-preview.png" alt="">
+        <div class="skills-card">
+          <img class="skills-card-img" src="img/java.png" alt="" />
+          <p class="skills-card-name">Java</p>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="img/mysql (1).png" alt="" />
+          <p class="skills-card-name">MySql</p>
         </div>
 
-        <div class="name_in_banner">
-
-            <h2 id="I_am_colors">I'm</h2>
-            <!-- <br> -->
-            <h1 id="user-detail-name">Nabanit</h1>
-            <h1 id="aboutpagescroll" >Mondal</h1>
-            <!-- <button id="resume-button-2"  role="button"><a  download="" href="" id="resume-link-2"  -->
-                <!-- class="downbtn">Download Resume</a></button> -->
-                <!-- class="nav-link resume button-1" -->
+        <div class="skills-card">
+          <img class="skills-card-img" src="img/spring-boot.png" alt="" />
+          <p class="skills-card-name">Spring</p>
         </div>
-        <div id="triangle_left"></div>
-    </div>
-
-    <!-- Section 2 starts-->
-    <div id="about" class="about section section2">
-        <!-- <div class="custom-shape-divider-top-1678815870">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-            </svg>
-        </div> -->
-    <!-- class="about section" -->
-   
-        <!-- <h2 id="section2">About Me</h2> -->
-        <button class="button-89" role="button"><h1>About Me</h1></button>
-
-        <!-- Line colors code starts -->
-
-        <!-- <div id="lines">
-            <div class="childline1"></div>
-            <div class="childline2"></div>
-            <div class="childline3"></div>
-        </div> -->
-
-        <!-- Line colors code ends -->
-
-        <p id="user-detail-intro">A motivated and enthusiastic full stack developer  with good frontend skills on HTML,CSS and JavaScript and backend skills< on JAVA and having a passion for learning. Seeking opportunities to grow and develop career in tech industry while contributing fresh ideas and a positive attitude.<br> Ready for new challenges and eager to learn new skills and committed towards success.</p>
-
-    </div>
-    <!-- Section 2 ends-->
-
-    <!-- Section 3 starts -->
-
-    
-
-    <div id="skills" class="section3">
-
-        <div id="triangle_left"></div>
-
-        <button class="button-89" role="button"><h1>Skills</h1></button>
-        <!-- Line colors code starts -->
-
-        <!-- <div id="lines">
-            <div class="childline1"></div>
-            <div class="childline2"></div>
-            <div class="childline3"></div>
-        </div> -->
-
-        <!-- Line colors code ends -->
-
-        <div class="skillsdiv">
-            <div class="skills-card" >
-                <img data-aos="zoom-in" data-aos-offset="200" class="skills-card-img" width="50%" height="50%" src="/Languages logos/html_logo-removebg-preview.png" alt="">
-                <h4 data-aos="zoom-in" data-aos-offset="200" class="skills-card-name">HTML</h4>
-            </div>
-            <!-- ------------------------------- -->
-            <div class="skills-card">
-                <img data-aos="zoom-in" data-aos-offset="200" class="skills-card-img" width="50%" height="50%" src="/Languages logos/CSS_logo-removebg-preview (1).png" alt="">
-                <h4 data-aos="zoom-in" data-aos-offset="200" class="skills-card-name">CSS</h4>
-            </div>
-            <!-- ------------------------------- -->
-            <div class="skills-card">
-                <img data-aos="zoom-in" data-aos-offset="200" class="skills-card-img" width="50%" height="50%" border-radius="5px" src="/Languages logos/JS logo.png" alt="">
-                <h4 data-aos="zoom-in" data-aos-offset="200" class="skills-card-name">JavaScript</h4>
-            </div>
-            <!-- ------------------------------- -->
-            <div class="skills-card">
-                <img data-aos="zoom-in" data-aos-offset="200" class="skills-card-img" id="bootstrap-logo" width="50%" height="50%" src="/Languages logos/bootstrap-logo-shadow.png" alt="">
-                <h4 data-aos="zoom-in" data-aos-offset="200" class="skills-card-name">Bootstrap</h4>
-            </div>
-            <!-- ------------------------------- -->
-            <div  class="skills-card">
-                <img data-aos="zoom-in" data-aos-offset="150" class="skills-card-img" width="50%" height="50%" src="/Languages logos/Java_logo-removebg-preview.png" alt="">
-                <h4 data-aos="zoom-in" data-aos-offset="150" class="skills-card-name">JAVA</h4>
-            </div>
-            <!-- ------------------------------- -->
-            <div class="skills-card">
-                <img data-aos="zoom-in" data-aos-offset="150" class="skills-card-img" width="50%" height="50%" src="/Languages logos/MySQL_logo-removebg-preview.png" alt="">
-                <h4 data-aos="zoom-in" data-aos-offset="150" class="skills-card-name">MySQL</h4>
-            </div>
-            <!----------------------------------->
-            <div  class="skills-card">
-                <img data-aos="zoom-in" data-aos-offset="150" class="skills-card-img" width="50%" height="50%" src="/Languages logos/Spring_boot_logo-removebg-preview.png" alt="">
-                <h4 data-aos="zoom-in" data-aos-offset="150" class="skills-card-name">Spring</h4>
-            </div>
-            <!-- ------------------------------- -->
-            <div  class="skills-card">
-                <img data-aos="zoom-in" data-aos-offset="150" class="skills-card-img" width="50%" height="50%" src="/Languages logos/hibernate-logo.png" alt="">
-                <h4 data-aos="zoom-in" data-aos-offset="150" class="skills-card-name">Hibernate</h4>
-            </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="img/spring-boot-logo.png" alt="" />
+          <p class="skills-card-name">Spring Boot</p>
         </div>
-
-    </div>
-
-    <!-- Section 3 ends -->
-
-    <!-- Section 4 starts -->
-
-    <div  id="projects" class="Section4">
-     <div id="triangle_left"></div>
-        <!-- <h2 id="section4">Projects</h2> -->
-
-        <button class="button-89" role="button"><h1>Skills</h1></button>
-
-        <!-- Line colors code starts -->
-
-        <!-- <div id="lines">
-            <div class="childline1"></div>
-            <div class="childline2"></div>
-            <div class="childline3"></div>
-        </div> -->
-
-        <!-- Line colors code ends -->
-
-        <div class="Projects_div">
-            <!-- ------------------------------- -->
-            <div class="project-card" data-aos="slide-right" data-aos-offset="200">
-                <div class="pro_img">
-                    <!-- <a class="project-deployed-link" href="https://peaceful-douhua-5883ad.netlify.app/"><img src="/My_Project_1_Photo2.png" alt=""></a>  -->
-                </div>
-                <div class="pro_details">
-
-                    <!-- <h4 class="project-title">Fashionized Website  <a  class="project-github-link" href="https://github.com/Soumit-Das/Fashionized_website"><i class="fab fa-github"></i></a></h4>
-                    <h5 class="project-description">A fashion based Ecommerce website</h5>
-                    <h4 id="techstack">Tech stacks</h4>
-                    <ul class="project-tech-stack">
-                        
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                        
-                    </ul> -->
-            </div>
-
-            </div>
-            <div class="project-card" data-aos="slide-left" data-aos-offset="200">
-                <div class="pro_img">
-                    <!-- <a class="project-deployed-link" href="https://peaceful-douhua-5883ad.netlify.app/"><img src="/My_Project_1_Photo2.png" alt=""></a>  -->
-                </div>
-                <div class="pro_details">
-
-                    <!-- <h4 class="project-title">Fashionized Website  <a  class="project-github-link" href="https://github.com/Soumit-Das/Fashionized_website"><i class="fab fa-github"></i></a></h4>
-                    <h5 class="project-description">A fashion based Ecommerce website</h5>
-                    <h4 id="techstack">Tech stacks</h4>
-                    <ul class="project-tech-stack">
-                        
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                        
-                    </ul> -->
-            </div>
-
-            </div>
-            <div class="project-card" data-aos="slide-right" data-aos-offset="200">
-                <div class="pro_img">
-                    <!-- <a class="project-deployed-link" href="https://peaceful-douhua-5883ad.netlify.app/"><img src="/My_Project_1_Photo2.png" alt=""></a>  -->
-                </div>
-                <div class="pro_details">
-
-                    <!-- <h4 class="project-title">Fashionized Website  <a  class="project-github-link" href="https://github.com/Soumit-Das/Fashionized_website"><i class="fab fa-github"></i></a></h4>
-                    <h5 class="project-description">A fashion based Ecommerce website</h5>
-                    <h4 id="techstack">Tech stacks</h4>
-                    <ul class="project-tech-stack">
-                        
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li> -->
-                        
-                    </ul>
-            </div>
-
-            </div>
-            <div class="project-card" data-aos="slide-left" data-aos-offset="200">
-                <div class="pro_img">
-                    <!-- <a class="project-deployed-link" href="https://peaceful-douhua-5883ad.netlify.app/"><img src="/My_Project_1_Photo2.png" alt=""></a>  -->
-                </div>
-                <div class="pro_details">
-
-                    <!-- <h4 class="project-title">Fashionized Website  <a  class="project-github-link" href="https://github.com/Soumit-Das/Fashionized_website"><i class="fab fa-github"></i></a></h4>
-                    <h5 class="project-description">A fashion based Ecommerce website</h5>
-                    <h4 id="techstack">Tech stacks</h4>
-                    <ul class="project-tech-stack">
-                        
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                        
-                    </ul> -->
-            </div>
-
-            </div>
-            </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="img/hibernate-icon.svg" alt="" />
+          <p class="skills-card-name">Hibernet</p>
         </div>
-    </div>
-
-    <!-- Section 4 ends -->
-
-    
-    
-    <!-- Section 5 starts -->
-    <div id="triangle_left"></div>
-    <div class="section5">
-
-        <button class="button-89" role="button"><h1>Soft Skills</h1></button>
-        <!-- Line colors code starts -->
-<!-- 
-        <div id="lines">
-            <div class="childline1"></div>
-            <div class="childline2"></div>
-            <div class="childline3"></div>
-        </div> -->
-        
-        <!-- Line colors code ends -->
-        <div class="Soft_Skills">
-            
-            <!-- Block 1 -->
-            <h2>HTML</h2>
-            <div class="progressbar">
-                <div class="html"><span>86%</span></div>
-            </div>
-            <h2>CSS</h2>
-            <div class="progressbar">
-                <div class="css"><span>74%</span></div>
-            </div>
-            <h2>JavaScript</h2>
-            <div class="progressbar">
-                <div class="javascript"><span>65%</span></div>
-            </div>
-            <h2>Java</h2>
-            <div class="progressbar">
-                <div class="java"><span>54%</span></div>
-            </div>
-            
-
+        <div class="skills-card">
+          <img class="skills-card-img" src="img/maven.png" alt="" />
+          <p class="skills-card-name">Maven</p>
         </div>
-    </div>
-
-
-    <!-- Section 5 ends -->
-
-    <!-- Section 5 (ii) starts -->
-
-<div class="section5ii">
-
-    <h2>Github</h2>
-    <!-- Line colors code starts -->
-
-    <div id="lines">
-        <div class="childline1"></div>
-        <div class="childline2"></div>
-        <div class="childline3"></div>
-    </div>
-    
-    <div class="githubcards">
-        
-        <img  id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=Nabanit08&theme=dark&hide_border=false&include_all_commits=true&count_private=true" alt="">
-        <img  id="github-top-langs" class="strk" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nabanit08&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="">
-        <img  id="github-streak-stats"  src="https://github-readme-streak-stats.herokuapp.com?user=Nabanit08&theme=dark&disable_animations=true" alt="">
-    </div>
-    <!-- <div id="calendar" class="react-activity-calendar"> -->
-        <div class="gitcalen">
-            <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-            <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
-            <div class="calendar react-activity-calendar">
-            Loading the data just for you.
-            </div>
-            <script>
-            GitHubCalendar(".calendar", "Nabanit08");
-            // or enable responsive functionality
-            GitHubCalendar(".calendar", "Nabanit08", { responsive: true });
-            </script>
+        <div class="skills-card">
+          <img
+            class="skills-card-img"
+            src="img/swagger_logo-modified.png"
+            alt=""
+          />
+          <p class="skills-card-name">Swagger</p>
         </div>
-        <!-- </div> -->
-        <!-- <img class="github_heatmap" class="react-activity-calendar" src="/Github heatmap.png" alt=""> -->
-        <!-- <img src="https://ghchart.rshah.org/Soumit-Das" alt="Soumit-Das's Github chart" /> -->
-    </div>
-    
-
-    <!-- Section 5 (ii) ends -->
-
-   
-    <!-- Section 6 starts -->
-    
-    <div id="contact">
-        <div id="triangle_left"></div>
-        <button class="button-89" role="button"><h1>Contact</h1></button>
-        <!-- Line colors code starts -->
-
-
-        <!-- Line colors code ends -->
-        <div class="container">
-            <div class="row">
-                <!-- <div class="contact-left">
-                    <h1 class="subtitle">Contact Me</h1>
-                    <p id="contact-email"><i class="fas fa-paper-plane"></i>soumitdas500@gmail.com</p>
-                    <p id="contact-phone"><i class="fas fa-phone-square-alt"></i>+91 7908597421</p>
-                    <div class="social-icons">
-                        <a id="contact-linkedin" href="https://www.linkedin.com/in/soumit-das-52620b242/" target="_blank"><i
-                                class="fab fa-linkedin" id="Linkedin-icon"></i></a>
-                        <a href="https://m.facebook.com/100022097675884/" target="_blank"><i class="fab fa-facebook"
-                                id="Facebook-icon"></i></a>
-                        <a href="https://instagram.com/_soumit_das?igshid=ZDdkNTZiNTM=" target="_blank"><i
-                                class="fab fa-instagram" id="insta-icon"></i></a>
-                        <a id="contact-github" href="https://github.com/Soumit-Das" target="_blank"><i
-                             class="fab fa-github"></i></a>
-                    </div>
-                    <-- HTML !-->
-                    <!-- <button  class="button-1" role="button"><a  download="" href="Soumit-Das-Resume (2).pdf">Download Resume</a></button> -->
-
-                </div> 
-                <div class="contact-right">
-                    <form method="post">
-                        <div class="upper_inputs">
-                            <input type="text" name="Name" id="name" placeholder="Your Name" required>
-                            <input type="email" name="email" id="email" placeholder="Your Email" required>
-                        </div>
-                        <textarea name="Message" rows="6" id="Text" placeholder="Your Message"></textarea>
-                        <br>
-                        <button class="button-1" id="btn">Submit</button>
-                    </form>
-                    <div class="email_phone_div">
-                        <div class="p_tag_div">
-                            <p id="contact-email"><i class="fas fa-paper-plane"></i>navy190899@gmail.com</p>
-                            <p id="contact-phone"><i class="fas fa-phone-square-alt"></i>+91 8777095939</p>
-                        </div>
-                        <div class="social-icons">
-                            <a id="contact-linkedin" href="#" target="_blank"><i
-                                    class="fab fa-linkedin" id="Linkedin-icon"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-facebook"
-                                    id="Facebook-icon"></i></a>
-                            <a href="#" target="_blank"><i
-                                    class="fab fa-instagram" id="insta-icon"></i></a>
-                            <a id="contact-github" href="#" target="_blank"><i
-                                 class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="img/restful.png" alt="" />
+          <p class="skills-card-name">REST APIs</p>
         </div>
-    </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="img/dsa.png" alt="" />
+          <p class="skills-card-name">DSA</p>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="img/STS.png" alt="" />
+          <p class="skills-card-name">STS</p>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="img/postman.png" alt="" />
+          <p class="skills-card-name">Postman</p>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="img/github.png" alt="" />
+          <p class="skills-card-name">Github</p>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="img/visual-studio.png" alt="" />
+          <p class="skills-card-name">VS Code</p>
+        </div>
+      </div>
+    </section>
 
-    <!-- Section 6 ends -->
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-    <script>
+    <section id="github">
+      <h1>Github Calendar</h1>
       
+      <div class="calendar">
+        <img src="https://ghchart.rshah.org/Murli0399" alt="Github Calander" />
+      </div>
+      <div class="git-calander">
+        <img
+          id="github-streak-stats"
+          src="https://github-readme-streak-stats.herokuapp.com?user=Murli0399&theme=dark"
+          alt=""
+        />
+        <img
+          id="github-top-langs"
+          src="https://github-readme-stats.vercel.app/api?username=Murli0399&show_icons=true&theme=dark#gh-dark-mode-only"
+          alt=""
+        />
+        <img
+          id="github-stats-card"
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=Murli0399&hide_progress=true&theme=dark#gh-dark-mode-only"
+          alt=""
+        />
+      </div>
+    </section>
 
-       window.addEventListener("scroll",function(){
-        var header = document.getElementById("nav-menu");
-        header.classList.toggle("sticky",window.scrollY > 50)
-       })
-     
+    <section id="projects">
+      <h1>Featured Projects</h1>
+      <div class="project-card">
+        <div id="slideshow1">
+          <img src="img/quickdeals/Home-Page.png" alt="" />
+        </div>
+        <div class="description">
+          <h3 class="project-title">QuickDeals</h3>
+          <p class="project-description">
+            An E-commerce website clone of gearbest.com website. It sale
+            varities of Product. This was an Individual Project. In these
+            website I created on Homepage, Registration / Login page, Product
+            Page, Cart Page, Payment Page.
+          </p>
 
-        let number1 = document.getElementById("number1");
-        let number2 = document.getElementById("number2");
-        let number3 = document.getElementById("number3");
+          <h4 class="project-tech-stack">
+            Tech stack used : <span>HTML | CSS | JavaScript | Json</span>
+          </h4>
+          <div class="link">
+            <a
+              href="https://github.com/Murli0399/quixotic-vest-9795"
+              target="_blank"
+            >
+              <img src="img/github-sign.png" class="project-github-link" alt=""
+            /></a>
+            <a href="https://quickdeals.netlify.app/" target="_blank"
+              ><img src="img/chain.png" class="project-deployed-link" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
 
-        let counter1 = 0;
-        let counter2 = 0;
-        let counter3 = 0;
+      <div class="project-card">
+        <div id="slideshow1">
+          <img src="img/take-a-trip.png" alt="" />
+        </div>
+        <div class="description">
+          <h3 class="project-title">Take-A-Trip</h3>
+          <p class="project-description">
+            A service-based website that provides users hasslefree experience to
+            book flight and hotel tickets at their fingertips. we also book rail
+            tickets and also enjoy our full holiday trips.
+          </p>
 
-        setInterval(() => {
-            if (counter1 == 85) {
-                clearInterval();
-            } else {
-                counter1 += 1;
-                number1.innerHTML = counter1 + "%";
-            }
-        }, 32)
+          <h4 class="project-tech-stack">
+            Tech stack used : <span>HTML | CSS | JavaScript | Json</span>
+          </h4>
+          <div class="link">
+            <a
+              href="https://github.com/Murli0399/purple-crook-1402"
+              target="_blank"
+            >
+              <img src="img/github-sign.png" class="project-github-link" alt=""
+            /></a>
+            <a href="https://clone-of-mmt.netlify.app/" target="_blank"
+              ><img src="img/chain.png" class="project-deployed-link" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
 
-        setInterval(() => {
-            if (counter2 == 95) {
-                clearInterval();
-            } else {
-                counter2 += 1;
-                number2.innerHTML = counter2 + "%";
-            }
-        }, 28)
+      <div class="project-card">
+        <div id="slideshow1">
+          <img src="img/auction/auctionsys.png" alt="" />
+        </div>
+        <div class="description">
+          <h3 class="project-title">Automated Auction System</h3>
+          <p class="project-description">
+            An automated Auction System is an Application Software that is used
+            for the buying and selling of products. This software can be used by
+            the auction companies who arrange the Auction. Various buyers and
+            sellers are registered in the Auction company.
+          </p>
 
-        setInterval(() => {
-            if (counter3 == 75) {
-                clearInterval();
-            } else {
-                counter3 += 1;
-                number3.innerHTML = counter3 + "%";
-            }
-        }, 38)
+          <h4 class="project-tech-stack">
+            Tech stack used : <span>Java | JDBC | Maven | MySql</span>
+          </h4>
+          <div class="link">
+            <a
+              href="https://github.com/Murli0399/Automated-Auction-System"
+              target="_blank"
+            >
+              <img src="img/github-sign.png" class="project-github-link" alt=""
+            /></a>
+            <a
+              href="https://github.com/Murli0399/Automated-Auction-System#readme"
+              target="_blank"
+              ><img src="img/chain.png" class="project-deployed-link" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
 
-        let a = document.getElementById("I_am_colors");
+      <div class="project-card">
+        <div id="slideshow1">
+          <img src="img/Recipe/recipe.jpg" alt="" />
+        </div>
+        <div class="description">
+          <h3 class="project-title">Recipe Application</h3>
+          <p class="project-description">
+            Designed a REST API for Recipe Application, which provides all the
+            basic functionalities for Online Recipe Management using JAVA with
+            Spring Boot, Hibernate, Maven, J.D.B.C and MySQL Database as a part
+            of learning curve in Masai School.
+          </p>
 
-        let sky = a.innerText.charAt(0);
-        let blue = a.innerText.charAt(1);
-        let red = a.innerText.charAt(2);
+          <h4 class="project-tech-stack">
+            Tech stack used :
+            <span
+              >Java | Spring | Spring Boot | JDBC | Hibernate | Maven |
+              MySql</span
+            >
+          </h4>
+          <div class="link">
+            <a
+              href="https://github.com/Murli0399/Online-Recipe-System"
+              target="_blank"
+            >
+              <img src="img/github-sign.png" class="project-github-link" alt=""
+            /></a>
+            <a
+              href="https://github.com/Murli0399/Online-Recipe-System#readme"
+              target="_blank"
+              ><img src="img/chain.png" class="project-deployed-link" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-function redirect(){
-    window.open("https://drive.google.com/file/d/1b5DlJ04NDyHHPDNL_9NduuiYn_mFUMi3/view?usp=drive_link","_blank","noreferrer");
-}
+    <!-- Contact Section -->
+    <section id="contact">
+      <h1>Contact me</h1>
+      <div class="flex-div">
+        <form id="form" onsubmit="send(); reset(); return false;">
+          <h3 class="form-title">Message me</h3>
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="What's your good name?"
+          />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="What's your email address?"
+          />
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="2"
+            placeholder="What can I help you?"
+          ></textarea>
+          <input type="submit" value="Submit" />
+        </form>
+        <div class="contact-icon">
+          <h3>Get in touch</h3>
+          <p>
+            <img
+              src="img/github-sign.png"
+              onclick="gihub()"
+              id="contact-github"
+              alt=""
+            />
+            <span onclick="gihub()">github.com/murli</span>
+          </p>
+          <p>
+            <img
+              src="img/linkedin.png"
+              onclick="linkedin()"
+              id="contact-linkedin"
+              alt=""
+            />
+            <span onclick="linkedin()">linkedin.com/murli</span>
+          </p>
+          <p>
+            <img
+              src="img/gmail.png"
+              onclick="email()"
+              id="contact-email"
+              alt=""
+            />
+            <span>murlikhaire28@gmail.com</span>
+          </p>
+          <p>
+            <img src="img/viber.png" id="contact-phone" alt="" />
+            <span>+91 84628-58556</span>
+          </p>
+        </div>
+      </div>
+    </section>
 
+    <footer>
+      <p>Designed by <span>Murli Khaire</span></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/github-calendar@2.1.0/dist/github-calendar.min.js"></script>
 
-    </script>
-<!-- AOS Script -->
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Import JS: Particles Theme -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Import JS: Sweet Scroll -->
+    <script src="./script/sweet-scroll.min.js"></script>
+
+    <!-- Import JS: Main Script -->
+    <script src="./script/main.js"></script>
+
+    <script src="./script/nav.js" type="module"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script/email.js"></script>
+ 
+ 
+  
+  </body>
+
   <script>
-    AOS.init({
-        offset: 300,
-        duration: 1000
-    });
+    function homePage() {
+      window.location.href = "index.html";
+    }
+
+    function resumeFun() {
+      location.href =
+        "https://drive.google.com/uc?id=1E1Q4sLGpW4Qb-ZkE73UGDsjqUlrWKTGW&export=download";
+    }
+
+    function gihub() {
+      window.open("https://github.com/Murli0399", "_blank");
+    }
+
+    function linkedin() {
+      window.open("https://www.linkedin.com/in/murli-khaire/", "_blank");
+    }
+
+    function email() {
+      window.open("murlikhaire28@gmail.com", "_blank");
+    }
+    
   </script>
-
-</body>
-
 </html>
